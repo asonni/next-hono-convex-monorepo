@@ -4,7 +4,7 @@ import { createHash, randomBytes, scrypt, timingSafeEqual } from "node:crypto";
 
 import { v } from "convex/values";
 
-import { action } from "./_generated/server";
+import { action } from "./_generated/server.js";
 
 export const hashPassword = action({
   args: { password: v.string() },
