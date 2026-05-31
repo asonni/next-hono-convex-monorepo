@@ -1,5 +1,5 @@
 {
-  "buildCommand": "",
+  "buildCommand": "echo 'No build required'",
   "outputDirectory": ".",
   "rewrites": [
     {
