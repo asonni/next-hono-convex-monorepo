@@ -6,6 +6,7 @@
   "exports": {
     "./base": "./base.js",
     "./next-js": "./next.js",
+    "./hono": "./hono.js",
     "./react-internal": "./react-internal.js"
   },
   "devDependencies": {
