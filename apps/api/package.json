@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "bun run --watch src/index.ts",
-    "build": "bunx tsc --noEmit",
+    "build": "echo 'Hono API - no build required'",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
