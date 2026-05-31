@@ -11,7 +11,9 @@ app.get('/', (c) => {
   return c.text(welcomeStrings.join('\n\n'))
 })
 
-Bun.serve({ fetch: app.fetch, port: 3001 })
-console.log('Server running at http://localhost:3001')
+if (import.meta.main) {
+  Bun.serve({ fetch: app.fetch, port: 3001 })
+  console.log('Server running at http://localhost:3001')
+}
 
 export default app
