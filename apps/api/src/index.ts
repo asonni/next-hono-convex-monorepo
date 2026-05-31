@@ -1,5 +1,4 @@
 import { Hono } from 'hono'
-import { serve } from 'bun'
 
 const app = new Hono()
 
@@ -11,10 +10,5 @@ const welcomeStrings = [
 app.get('/', (c) => {
   return c.text(welcomeStrings.join('\n\n'))
 })
-
-if (import.meta.main) {
-  serve({ fetch: app.fetch, port: 3001 })
-  console.log('Server running at http://localhost:3001')
-}
 
 export default app
