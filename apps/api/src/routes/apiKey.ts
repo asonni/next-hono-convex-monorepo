@@ -5,9 +5,9 @@ import { api } from '@workspace/backend/api';
 import type { Id } from '@workspace/backend/dataModel';
 import { sValidator } from '@hono/standard-validator';
 
-import { convex } from '../lib/convex';
-import { serializeDates } from '../lib/dates';
-import { env } from '../data/env';
+import { convex } from '../lib/convex.js';
+import { serializeDates } from '../lib/dates.js';
+import { env } from '../data/env.js';
 
 type JwtEnv = {
   Variables: {
