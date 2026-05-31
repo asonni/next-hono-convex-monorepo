@@ -1,5 +1,5 @@
-/// <reference types="bun-types" />
 import { Hono } from 'hono'
+import { serve } from 'bun'
 
 const app = new Hono()
 
@@ -13,7 +13,7 @@ app.get('/', (c) => {
 })
 
 if (import.meta.main) {
-  Bun.serve({ fetch: app.fetch, port: 3001 })
+  serve({ fetch: app.fetch, port: 3001 })
   console.log('Server running at http://localhost:3001')
 }
 
