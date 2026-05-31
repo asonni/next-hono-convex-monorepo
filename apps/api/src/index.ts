@@ -1,3 +1,4 @@
+/// <reference types="bun-types" />
 import { Hono } from 'hono'
 
 const app = new Hono()
