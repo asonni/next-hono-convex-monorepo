@@ -1,14 +1,12 @@
 {
   "extends": "@workspace/typescript-config/base.json",
   "compilerOptions": {
-    "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "types": ["node", "bun"],
     "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx",
-    "outDir": "./dist"
+    "allowJs": true,
+    "strictNullChecks": true
   },
-  "include": ["src"],
+  "include": ["convex/**/*"],
   "exclude": ["node_modules"]
 }
